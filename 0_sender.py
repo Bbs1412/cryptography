@@ -24,3 +24,12 @@ print()
 
 client.close()
 s.close()
+
+
+# Minimal:
+# import socket
+# server = socket.socket()
+# server.bind(("", 9876))
+# server.listen(5)
+# client, _ = server.accept()
+# client.send("Hello dear!".encode())

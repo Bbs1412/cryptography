@@ -1,6 +1,6 @@
 # This is a receiver which will receive the message from sender
 # Receiver will be client side
-# socket > connect > s/r 
+# socket > connect > s/r
 
 import socket
 
@@ -20,4 +20,8 @@ print(f"\n\n[v] {message}")
 print()
 s.close()
 
-
+# Minimal:
+# import socket
+# s = socket.socket()
+# s.connect(('localhost', 9876))
+# print(s.recv(1024).decode())
